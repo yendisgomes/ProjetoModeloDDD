@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoModeloDDD.Domain.Interfaces
+namespace ProjetoModeloDDD.Application.Interfaces
 {
-    public interface IRepositoryBase<TEntity> where TEntity : class
+    public interface IAppServiceBase<TEntity> where TEntity : class
     {
         void Add(TEntity obj);
         TEntity GetById(int id);
